@@ -1,0 +1,23 @@
+<h3> Students List</h3>
+
+      <table class=" students-table table table-bordered">
+        <thead>
+            <tr>
+                <th> First Name</th>
+                 <th>  Phone  </th>
+                 <th>  Email </th>
+                <th>View Detail</th>
+            </tr>
+          </thead>
+          <tbody>
+             <tr *ngFor="let stud of students">
+                 <td>{{stud.fname}}</td>
+                 <td>{{stud.phone}}</td>
+                 <td>{{stud.email}}</td>
+                 <td> <a routerLink="/students/{{stud.id}}">View Details</a> </td>
+              </tr>
+          </tbody>
+      </table>
+<div>
+  <a routerLink='/home'>Go Back</a>
+</div>
