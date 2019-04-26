@@ -5,6 +5,7 @@ import {StudentsListComponent} from './students-list/students-list.component';
 import {StudentsDetailComponent} from './students-detail/students-detail.component';
  import { TeachersListComponent } from './teachers-list/teachers-list.component';
   import { TeachersDetailComponent } from './teachers-detail/teachers-detail.component';
+import {TeacherRouteGuardService} from './teacher-route-guard.service';
 
 const routes: Routes = [
 {
@@ -13,7 +14,7 @@ const routes: Routes = [
 {
   path:'teachers', component:TeachersListComponent, 
   children:[
-    {path:':fname', component: TeachersDetailComponent}
+    {path:':fname', component: TeachersDetailComponent,  canActivate:[TeacherRouteGuardService]}
   ]
  
 },

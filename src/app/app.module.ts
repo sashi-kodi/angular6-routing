@@ -9,6 +9,7 @@ import { StudentsDetailComponent } from './students-detail/students-detail.compo
 import { TeachersListComponent } from './teachers-list/teachers-list.component';
 import { TeachersDetailComponent } from './teachers-detail/teachers-detail.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
