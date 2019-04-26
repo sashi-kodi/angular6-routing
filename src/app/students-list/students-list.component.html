@@ -14,7 +14,7 @@
                  <td>{{stud.fname}}</td>
                  <td>{{stud.phone}}</td>
                  <td>{{stud.email}}</td>
-                 <td> <a routerLink="/students/{{stud.id}}">View Details</a> </td>
+                 <td> <a [routerLink]="['/students', stud.id]" [queryParams]="{view:'show'}">View Details</a> </td>
               </tr>
           </tbody>
       </table>

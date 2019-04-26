@@ -19,6 +19,9 @@ export class StudentsDetailComponent implements OnInit {
       this.id =+params['id'];
        this.student = this.studentsListService.getStudentDetail(this.id);
     });
+     this.activatedRoute.queryParams.subscribe((query)=>{
+      console.log(query);
+    });
     
   }
 
