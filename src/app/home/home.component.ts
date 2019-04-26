@@ -16,5 +16,7 @@ export class HomeComponent implements OnInit {
  navigateToStudents= ()=>{
    this.router.navigate(['/students'], {queryParams: {showing:'students'}});
  }
-
+navigateToTeachers = ()=>{
+  this.router.navigate(['/teachers'], {queryParams: {showing:'teachers'}});
+}
 }

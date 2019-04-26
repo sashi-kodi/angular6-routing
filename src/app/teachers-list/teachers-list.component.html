@@ -1,0 +1,14 @@
+<h3>
+  teachers-list below:
+</h3>
+
+<div class="teachers-row row" *ngFor="let teacher of teachers">
+<div class="col-sm-4">
+    Name:
+    </div>
+<div class="col-sm-4">
+   <a [routerLink]="[teacher.fname]"> {{teacher.fname}}</a> 
+</div>
+</div>
+
+<router-outlet></router-outlet>
